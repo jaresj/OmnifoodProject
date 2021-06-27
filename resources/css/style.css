@@ -10,13 +10,15 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix {zoom: 1;}
@@ -566,7 +568,7 @@ ion-icon[name=logo-facebook],
 ion-icon[name=logo-twitter],
 ion-icon[name=logo-instagram],
 ion-icon[name=logo-linkedin] {
-    transition: color: 0.2s;
+    transition: color 0.2s;
 }
 ion-icon[name=logo-facebook]:hover {
     color: #3b5998;

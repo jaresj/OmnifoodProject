@@ -197,7 +197,7 @@ input[type=submit]:active  {
 /* ---------------------------------------- */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -256,6 +256,19 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+/* MOBILE NAV */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 200%;
+    color: #fff;
+}
+
 /* STICKY NAV */
 
 .sticky {
@@ -268,7 +281,7 @@ header {
     z-index: 9999;
 }
 
-.main-nav {
+.sticky .main-nav {
     margin-top: 18px;
 }
 
@@ -417,7 +430,7 @@ header {
 /* ---------------------------------------- */
 
 .section-testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .80)), url(./img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .80)), url(./img/back-customers-min.jpg);
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
@@ -624,5 +637,28 @@ footer p {
     color: #888;
     text-align: center;
     font-size: 90%;
+}
+
+/* ---------------------------------------- */
+/* ANIMATIONS */
+/* ---------------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.js--wp-1.animate__animated,
+.js--wp-2.animate__animated,
+.js--wp-3.animate__animated {
+    opacity: 1;
 }
 
